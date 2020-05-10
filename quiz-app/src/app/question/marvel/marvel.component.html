@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="marvel.component.css">
+    </head>
+    
+    <body>
+        <div>
+            <p class="topic_texts"><button [routerLink]="['/quiz_page']" id="back"> Go Back to choose</button></p>
+            <p class="topic_texts" id="topic">Marvel Studios</p>
+        </div>
+
+        <div class="marvel_page">
+
+            <div class="Question_Answer">
+                <h1 class="question">Q. Who is not the member of the Avengers?</h1>
+                
+                <div class="answer_options">
+                    <div class="answer_image 1">
+                        <img src="https://i.pinimg.com/564x/f8/ff/e0/f8ffe02ebe7c8e119e758d569df79fcf.jpg" width="135" height="250" alt="Can't see">
+                    </div>
+                    <div class="answer_text 1">
+                        <p>A</p>
+                    </div>
+                </div>
+
+                <div class="answer_options">
+                    <div class="answer_image 2">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/851abc18243869.562c644eb5064.jpg" width="150" height="250" alt="Can't see">
+                    </div>
+                    <div class="answer_text 2">
+                        <p>B</p>
+                    </div>
+                </div>
+
+                <div class="answer_options"> 
+                    <div class="answer_image 3">
+                        <img src="https://i.pinimg.com/564x/7d/9f/e3/7d9fe35ad8c5daeb3e9be765d2369d59.jpg" width="150" height="250" alt="Can't see">
+                    </div>
+                    <div class="answer_text 3">
+                        <p>C</p>
+                    </div>  
+                </div>
+
+                <div class="answer_options">
+                    <div class="answer_image 4">
+                        <img src="https://i.pinimg.com/564x/e9/19/4e/e9194e43359334afee74fdf250a7294b.jpg" width="135" height="250" alt="Can't see">
+                    </div>
+                    
+                    <div class="answer_text 4">
+                        <p>D</p>
+                    </div>
+                </div>
+
+                <div class="User_answer">
+                    <input
+                    placeholder=" Type your answer here "
+                    type="text"
+                    [(ngModel)] = "answer.content">
+                   
+                    <button id="submit_button" (click) = "save(); checkanswer(answer.content)" ><label>Submit</label></button> 
+                    <p></p>
+
+                </div> 
+
+            </div>
+        </div>
+
+    </body>
+</html>
+

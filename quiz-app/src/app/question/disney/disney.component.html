@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="disney.component.css">
+    </head>
+    
+    <body>
+
+        <div>
+            <p class="topic_texts"><button [routerLink]="['/quiz_page']" id="back">Choose another Topic</button></p>
+            <p class="topic_texts" id="topic">Walt Disney Pictures</p>
+        </div>
+
+        <div class="disney_page">
+            <div class="Question_Answer">
+                <h1 class="question">Q. What is NOT the lyrics of<br/>FROZEN's OST, “Let it go”?</h1>
+                
+                <div class="answer_options">
+                    <div class="answer 1">
+                        <p class="answer_texts" id="number">A</p>
+                        <p class="answer_texts" id="text">It’s time to see what I can do</p>
+                    </div>
+                </div>
+
+                <div class="answer_options">
+                    <div class="answer 2">
+                        <p class="answer_texts" id="number">B</p>
+                        <p class="answer_texts" id="text">There’s a thousand reasons I should go about my day</p>
+                    </div>
+                </div>
+
+                <div class="answer_options">
+                    <div class="answer 3">
+                        <p class="answer_texts" id="number">C</p>
+                        <p class="answer_texts" id="text">The cold never bothered me anyway</p>
+                    </div>  
+                </div>
+
+                <div class="answer_options">                
+                    <div class="answer 4">
+                        <p class="answer_texts" id="number">D</p>
+                        <p class="answer_texts" id="text">Can't hold it back anymore</p>
+                        <p> </p>
+                    </div>
+                </div>
+
+                <div class="User_answer">
+                    <input placeholder=" Type your answer here " type="text"
+                    [(ngModel)] = "answer.content">
+                    <button id="submit_button" (click) = "save(); checkanswer(answer.content)" ><label>Submit</label></button> 
+                    <p></p>
+                </div>   
+
+            </div>
+    </div>
+
+    </body>
+</html>
+

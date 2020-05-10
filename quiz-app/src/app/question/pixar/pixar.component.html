@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="pixar.component.css">
+    </head>
+    
+    <body>
+
+            <div>
+                <p class="topic_texts"><button [routerLink]="['/quiz_page']" id="back"> Choose another Topic </button></p>
+                <p class="topic_texts" id="topic">Pixar Animation Studios</p>
+            </div>
+
+            <div class="pixar_page">
+            <div class="Question_Answer">
+                <div>
+                    <p class="question_form">Q. What is NOT the Woody’s recorded<br/>catchphrases in the Toy Story series?</p>
+                </div>  
+                <div class="answer_options">
+                    <div class="answer 1">
+                        <p class="answer_texts" id="number">A</p>
+                        <p class="answer_texts" id="text">“Reach for the sky!”</p>
+                    </div>
+                </div>
+
+                <div class="answer_options">
+                    <div class="answer 2">
+                        <p class="answer_texts" id="number">B</p>
+                        <p class="answer_texts" id="text">“You’re my favorite deputy!”</p>
+                    </div>
+                </div>
+
+                <div class="answer_options">
+                    <div class="answer 3">
+                        <p class="answer_texts" id="number">C</p>
+                        <p class="answer_texts" id="text">“There’s snake in my boot!”</p>
+                    </div>  
+                </div>
+
+                <div class="answer_options">                
+                    <div class="answer 4">
+                        <p class="answer_texts" id="number">D</p>
+                        <p class="answer_texts" id="text">“Someone’s poisoned the cheese!”</p>
+                        <p> </p>
+                    </div>
+                </div>
+
+                <div class="User_answer">
+                    <input placeholder=" Type your answer here " type="text"
+                    [(ngModel)] = "answer.content">
+                    <button id="submit_button" (click) = "save(); checkanswer(answer.content)" ><label>Submit</label></button> 
+                    <p></p>
+                </div>   
+
+            </div>
+    </div>
+
+    </body>
+</html>
+

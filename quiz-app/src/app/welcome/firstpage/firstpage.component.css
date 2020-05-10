@@ -1,0 +1,44 @@
+
+#first_text{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#second_text{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#Input_box{
+    outline: none;
+    width: 300px;
+    height: 28px;
+    border: 2px solid;
+    border-color: black black lightblue black;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.username{
+    color: lightblue;
+    font-size:33px;
+}
+button {
+    height:28px; width:80px;
+    border-color: lightblue;
+    border-radius: 8px;
+    background-color: black;
+    color: lightblue;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: lightblue;
+    color: black;
+}

@@ -1,0 +1,77 @@
+.pixar_page{
+    font-family: 'Nunito', sans-serif;
+    vertical-align: middle;
+}
+
+.topic_texts{
+    display: inline-block;
+}
+
+#back{
+    outline: none;
+    border-color:rgba(0,88,179);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 180px;
+}
+
+#back:hover{
+    background-color: rgba(0,88,179);
+    color: black;
+}
+
+#topic{
+    border: 2px solid ;
+    border-color: rgba(0,88,179) black black black;
+    width: 250px;
+    color: rgba(0,88,179);
+    font-size: 20px;
+    margin-right: 330px;
+}
+
+.Question_Answer{
+    width: 80%;
+    vertical-align: middle;
+    border: 2px solid rgba(0,88,179);
+    color: white;
+    margin: 0 auto;
+}
+
+.question_form{
+    font-size: 30px;
+}
+
+.answer_texts {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+#number{
+    width: 30px;
+    background-color: rgba(0,88,179);
+}
+
+#text{
+    width: 420px;
+    border: 1px solid rgba(0,88,179);
+    border-radius: 4px;
+}
+
+.User_answer {
+    text-align: center;
+    font-size: 20px;
+}
+
+#submit_button {
+    outline: none;
+    height:27px; width:80px;
+    border-color: black;
+    border-radius: 8px;
+    background-color: rgba(0,88,179,0.384);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}

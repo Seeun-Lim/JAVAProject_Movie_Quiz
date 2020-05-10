@@ -1,0 +1,65 @@
+#first_page{
+    top: 135px;
+}
+
+#first_text{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.buttons{
+    display: flex; justify-content: center;
+}
+
+#topic{
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+    border-bottom: black;
+    border-left: black;
+    border-right: black;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+}
+
+.button{
+    outline: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0); 
+}
+
+.marvel {
+    border-top: rgba(48,231,237);
+    color:rgba(48,231,237); 
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.marvel:hover {
+    background-color: rgba(45, 233, 240, 0.2);
+}
+
+.disney{
+    border-top: rgba(0,166,215);
+    color: rgba(0,166,215); 
+    font-size: 33px;
+    margin-right: 10px;
+}
+
+.disney:hover{
+    background-color: rgba(0,166,215,0.3);
+}
+
+.pixar{
+    border-top: rgba(0,88,179); 
+    color:rgba(0,88,179); 
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.pixar:hover{
+    background-color: rgba(0,88,179,0.3);
+}

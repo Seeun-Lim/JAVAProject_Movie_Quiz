@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="question-answer-form.component.css">
+    </head>
+
+    <body>
+        <div id="first_page">
+            <h1 id="first_text">Choose Your Question Topic</h1>
+            <div class="buttons">
+                <button [routerLink]="['/marvel']" 
+                        class="button marvel" id="topic"> Marvel Studios </button>
+                <button [routerLink]="['/disney']"  class="button disney" id="topic"> Walt Disney Pictures </button>
+                <button [routerLink]="['/pixar']"  class="button pixar" id="topic"> Pixar Animation Studios </button>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="firstpage.component.css">
+
+    </head>
+
+    <body>
+        <div id="first_page">
+            <p id="first_text">Welcome to Quiz Page</p>
+            <div class="buttons">
+                <div class="User_id">
+                    <input id="Input_box" placeholder=" Type your name here " type="text" [(ngModel)] = "user.loginName">                    
+                    <p id="second_text">Hi 
+                        <span class="username">{{user.loginName}}</span>, Are you ready? 
+                        <button [routerLink]="['/quiz_page/',user.loginName]" 
+                        (click) = "save()" ><label>Let's go </label></button> </p>
+
+                    <router-outlet></router-outlet>
+               </div>   
+            </div>
+        </div>       
+    </body>
+</html>
